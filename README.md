@@ -1,4 +1,4 @@
-# Waveshare 3S UPS Battery Emulator for Raspberry Pi
+# Waveshare 3S UPS Battery Emulator for Raspberry Pi (BETA)
 
 This project emulates a battery-backed power supply on Raspberry Pi using the Waveshare 3S UPS HAT and the INA219 current/voltage sensor. It uses a custom kernel module to fake battery and AC power status so that desktop environments (e.g., GNOME, LXDE) report realistic battery states.
 
