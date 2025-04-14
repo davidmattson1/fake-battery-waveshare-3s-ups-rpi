@@ -15,7 +15,12 @@ This project emulates a battery-backed power supply on Raspberry Pi using the Wa
 
 ---
 
+## Known Issues
+- Sometimes it will drop down in percentage and go back up based on python calculation
+- Sometimes it will repeat the 20% battery health warnings because of above issue
+- When the Waveshare 3s UPS is plugged in the battery percentage shows higher than what the battery is currently charged to
 
+---
 
 ### 🔌 UPS Module 3S Pinout & Raspberry Pi 5 GPIO Mapping
 #### Based on instructions on: https://www.waveshare.com/wiki/UPS_Module_3S
