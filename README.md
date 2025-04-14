@@ -19,6 +19,7 @@ This project emulates a battery-backed power supply on Raspberry Pi using the Wa
 - Sometimes it will drop down in percentage and go back up based on python calculation
 - Sometimes it will repeat the 20% battery health warnings because of above issue
 - When the Waveshare 3s UPS is plugged in the battery percentage shows higher than what the battery is currently charged to
+- On boot, it will show 100% battery life then drop to the real percentage after the service starts
 
 ---
 
