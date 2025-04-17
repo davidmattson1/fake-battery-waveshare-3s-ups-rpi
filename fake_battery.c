@@ -216,8 +216,7 @@ handle_charge_changes(int ac_status, struct battery_status *battery)
 static ssize_t
 control_device_write(struct file *file, const char *buffer, size_t count, loff_t *ppos)
 {
-    printk(KERN_INFO "fake_battery: received write of %zu bytes\n", count);
-    printk(KERN_INFO "fake_battery: input = '%.*s'\n", (int)count, kbuffer);
+    printk(KERN_INFO "fake_battery: received write of %zu bytes\n", count);    
 
     char kbuffer[1024]; /* limited by kernel frame size, 1K should be enough */
     char *buffer_cursor;
@@ -242,6 +241,8 @@ control_device_write(struct file *file, const char *buffer, size_t count, loff_t
         printk(KERN_ERR "bad copy_from_user\n");
         return -EINVAL;
     }
+
+    printk(KERN_INFO "fake_battery: input = '%.*s'\n", (int)count, kbuffer);
 
     buffer_cursor = kbuffer;
 
